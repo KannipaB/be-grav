@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/developer/PhpstormProjects/be-grav/system/languages/no.yaml',
-    'modified' => 1461784044,
+    'modified' => 1466673439,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 Tittel: %1$s

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/developer/PhpstormProjects/be-grav/system/languages/el.yaml',
-    'modified' => 1461784044,
+    'modified' => 1466673439,
     'data' => [
         'MONTHS_OF_THE_YEAR' => [
             0 => 'Ιανουάριος',

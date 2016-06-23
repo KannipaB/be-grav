@@ -2,14 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/developer/PhpstormProjects/be-grav/user/config/system.yaml',
-    'modified' => 1461784044,
+    'modified' => 1466675254,
     'data' => [
         'absolute_urls' => false,
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'antimatter',
+            'theme' => 'balltoro',
             'markdown_extra' => false,
             'process' => [
                 'markdown' => true,

@@ -1,0 +1,38 @@
+$scoop-header-underline: #FFC025;
+$scoop-date-color: rgba(0, 0, 0, .4);
+
+.scoop {
+    &__header {
+        display: inline-block;
+        width: 100%;
+        border-bottom: $latest-header-color 8px solid;
+        p, h5 {
+            margin: 0;
+        }
+        a {
+            font-size: 2em;
+        }
+    }
+    &__content {
+        display: table;
+        padding: 1em 0;
+        border-bottom: $latest-separator-color 1px solid;
+        &--image {
+            img {
+                max-width: 100%;
+            }
+        }
+        &--date {
+            font-size: .8em;
+            padding: 3px 0;
+            color: $scoop-date-color;
+            &:before {
+                font-family: FontAwesome;
+                content: " \f017 ";
+            }
+        }
+        &--headline {
+            margin-bottom: 1em;
+        }
+    }
+}

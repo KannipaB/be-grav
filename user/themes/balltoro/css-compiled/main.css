@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url(../css/bootstrap.min.css);
+@import url(../css/font-awesome.min.css);
+@import url(line-icon/style.css);
+.footer {
+  background: #333333;
+  color: #FFFFFF;
+  margin-top: 30px;
+  width: 100%;
+  height: 100%; }
+  .footer ul {
+    list-style: none;
+    padding: 0 !important; }
+    .footer ul li {
+      border-bottom: #444444 1px solid; }
+      .footer ul li a {
+        display: block;
+        padding: 15px; }
+        .footer ul li a:hover, .footer ul li a:focus, .footer ul li a:active {
+          text-decoration: none; }
+
+.footer-social {
+  margin-bottom: 60px; }
+  .footer-social__icon {
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    margin: 5px; }
+    .footer-social__icon:hover, .footer-social__icon:focus, .footer-social__icon:active {
+      color: #FFFFFF; }
+    .footer-social__icon:active {
+      background: #000000; }
+    .footer-social__icon--facebook {
+      background: #3B5998; }
+    .footer-social__icon--twitter {
+      background: #55acee; }
+    .footer-social__icon--pinterest {
+      background: #DB5442; }
+    .footer-social__icon--google-plus {
+      background: #dd4b39; }
+
+.nav-bar {
+  background: #222; }
+  .nav-bar__dropdown--position {
+    display: inline;
+    padding-left: 0; }
+  .nav-bar__logo {
+    height: 50px; }
+  .nav-bar__toggler {
+    font-size: 1.8em;
+    border-radius: 5px;
+    background-color: #333;
+    padding: 3px 7px;
+    margin-top: 7px;
+    margin-right: 10px; }
+
+.nav-list__menu {
+  border-top: 1px solid #333;
+  color: #FA1E64;
+  display: block;
+  line-height: 45px;
+  padding-left: 15px; }
+  .nav-list__menu:hover, .nav-list__menu:focus {
+    color: #FA1E64; }
+.nav-list__collapse {
+  color: white;
+  background-color: #333;
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 0.7em; }
+  .nav-list__collapse:hover, .nav-list__collapse:focus {
+    color: white;
+    text-decoration: none;
+    background-color: black; }
+  .nav-list__collapse--icon {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.toro-paginator a {
+  color: #FA1E64; }
+
+.social__button {
+  color: #FFFFFF;
+  text-decoration: none !important;
+  text-align: center;
+  padding: 5px; }
+  .social__button:hover, .social__button:focus, .social__button:active {
+    color: #FFFFFF; }
+  .social__button--facebook {
+    background: #3B5998; }
+  .social__button--twitter {
+    background: #55acee; }
+  .social__button--google-plus {
+    background: #dd4b39; }
+  .social__button--line {
+    background: #00DD00; }
+.social__border {
+  border-bottom: #FFC025 8px solid; }
+
+.breadcrumb-bar {
+  background: #eceeef; }
+  .breadcrumb-bar--balltoro {
+    height: 30px; }
+    .breadcrumb-bar--balltoro li + li:before {
+      color: #CCCCCC;
+      font-family: FontAwesome;
+      content: "\f178";
+      padding: 0 5px;
+      border-radius: 0; }
+
+a {
+  color: #FA1E64;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #FA1E64;
+    text-decoration: underline; }
+
+.featured-content {
+  background-color: #f1f1f1;
+  margin-bottom: 30px; }
+  .featured-content__image img {
+    max-width: 100%;
+    max-height: 100%; }
+  .featured-content__date {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.8em;
+    padding: 5px; }
+    .featured-content__date:before {
+      font-family: FontAwesome;
+      content: " \f017 "; }
+  .featured-content__headline {
+    padding: 0 5px; }
+  .featured-content__separator {
+    border-bottom: #f1f1f1 1px solid; }
+
+.ad-box {
+  border: #000000 1px solid;
+  padding: 25px;
+  margin: 30px;
+  text-align: center; }
+
+.category__header {
+  display: table;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: #FFC025 8px solid; }
+  .category__header p, .category__header h5 {
+    margin: 0; }
+  .category__header a {
+    font-size: 2em; }
+
+.news__header {
+  display: inline-block;
+  width: 100%;
+  border-bottom: #FFC025 8px solid; }
+  .news__header p, .news__header h5 {
+    margin: 0; }
+  .news__header a {
+    font-size: 2em; }
+.news__content {
+  display: table;
+  padding: 1em 0;
+  border-bottom: #f1f1f1 1px solid; }
+  .news__content--image img {
+    max-width: 100%; }
+  .news__content--date {
+    color: rgba(0, 0, 0, 0.4); }
+    .news__content--date:before {
+      font-family: FontAwesome;
+      content: " \f017 "; }
+  .news__content--sub-headline {
+    color: rgba(0, 0, 0, 0.68); }
+
+.scoop__header {
+  display: inline-block;
+  width: 100%;
+  border-bottom: #FFC025 8px solid; }
+  .scoop__header p, .scoop__header h5 {
+    margin: 0; }
+  .scoop__header a {
+    font-size: 2em; }
+.scoop__content {
+  display: table;
+  padding: 1em 0;
+  border-bottom: #f1f1f1 1px solid; }
+  .scoop__content--image img {
+    max-width: 100%; }
+  .scoop__content--date {
+    font-size: .8em;
+    padding: 3px 0;
+    color: rgba(0, 0, 0, 0.4); }
+    .scoop__content--date:before {
+      font-family: FontAwesome;
+      content: " \f017 "; }
+  .scoop__content--headline {
+    margin-bottom: 1em; }
+
+.news-details__image {
+  border-top: #FFC025 8px solid; }
+  .news-details__image img {
+    max-width: 100%;
+    max-height: 100%; }
+.news-details__meta {
+  font-size: 1.1em;
+  margin-bottom: 15px; }
+  .news-details__meta--author {
+    margin: 10px 0;
+    border-bottom: #CCCCCC 1px solid; }
+  .news-details__meta--date {
+    margin: 5px 0; }
+  .news-details__meta--update {
+    margin: 5px 0;
+    font-size: .8em;
+    color: #CCCCCC;
+    border-bottom: #CCCCCC 1px solid; }
+  .news-details__meta--tags {
+    margin: 10px 0; }
+.news-details__headline {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #FA1E64; }
+.news-details__content {
+  padding: 10px 0; }
+  .news-details__content--quote:before {
+    content: '//////////';
+    color: #00bfff;
+    font-size: 1.2em;
+    font-weight: 700; }
+
+.relate-news {
+  font-size: 1.2em;
+  list-style: none;
+  padding: 0; }
+  .relate-news li {
+    padding: 5px 0; }
+    .relate-news li:before {
+      content: "• ";
+      color: #FA1E64;
+      /* or whatever color you prefer */ }
+
+.social-stay-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
+
+.result-board {
+  margin-top: 7px;
+  background: #EFEFEF;
+  font-size: 1em; }
+  .result-board a:hover {
+    text-decoration: none; }
+  .result-board__button {
+    color: #FA1E64;
+    text-align: center;
+    width: 100%;
+    padding: 2px 10px;
+    margin: 0;
+    font-size: 1.1em; }
+    .result-board__button a {
+      padding-right: 10px; }
+    .result-board__button.collapsed:after {
+      content: "+";
+      float: right;
+      font-size: 20px;
+      line-height: 20px; }
+    .result-board__button:after {
+      content: " − ";
+      float: right;
+      font-size: 20px;
+      line-height: 20px; }
+  .result-board__league-dropdown--icon {
+    background: #FFC025;
+    color: white;
+    font-size: 1.2em;
+    padding: 7px;
+    padding-bottom: 10px; }
+  .result-board__league-dropdown {
+    background: #216CB6;
+    padding: 6px; }
+    .result-board__league-dropdown a {
+      color: white;
+      text-align: left; }
+    .result-board__league-dropdown--list {
+      width: 100%;
+      border-radius: 0;
+      border: none; }
+  .result-board .result-board__league-result {
+    text-align: center;
+    margin-top: 16px; }
+
+.table-description {
+  border-bottom: 8px solid #FFC025;
+  text-align: center; }
+
+.date-time {
+  font-size: 13px; }
+
+.league-table {
+  margin-top: 0 !important;
+  font-size: 14px; }
+  .league-table--box {
+    margin-bottom: 0; }
+    .league-table--box__header {
+      font-size: 13px;
+      padding: 0 !important;
+      border-bottom: 3px solid gray; }
+  .league-table thead {
+    padding: 0px; }
+  .league-table tbody tr:hover {
+    background-color: white; }
+  .league-table tbody td {
+    padding: 8px;
+    border-bottom: 1px solid white; }
+  .league-table__team-names {
+    width: 50%;
+    text-align: left; }
+    .league-table__team-names a {
+      color: black; }
+
+.rank-1 {
+  background-color: #ffc025; }
+
+.rank-2 {
+  background-color: #FFCD51; }
+
+.rank-3 {
+  background-color: #6BD181; }
+
+.rank-4 {
+  background-color: #9CE0AB; }
+
+.login__login-btn {
+  width: 100%;
+  border-radius: 0; }
+.login__facebook-btn {
+  color: #3B5998; }
+.login__google-plus-btn {
+  color: #dd4b39; }
+
+/*# sourceMappingURL=main.css.map */

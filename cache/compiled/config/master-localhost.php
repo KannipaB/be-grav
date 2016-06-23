@@ -1,54 +1,244 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1466582970,
-    'checksum' => '6f4b9efad26d565acd8109d068112667',
+    'timestamp' => 1466675276,
+    'checksum' => '949f5f44d2911c8c18122df978749c43',
     'files' => [
         'user/config' => [
+            'media' => [
+                'file' => 'user/config/media.yaml',
+                'modified' => 1466594394
+            ],
+            'plugins/problems' => [
+                'file' => 'user/config/plugins/problems.yaml',
+                'modified' => 1466597951
+            ],
+            'security' => [
+                'file' => 'user/config/security.yaml',
+                'modified' => 1466586391
+            ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
+            ],
+            'streams' => [
+                'file' => 'user/config/streams.yaml',
+                'modified' => 1466594394
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1461784044
+                'modified' => 1466675254
+            ],
+            'themes/agency' => [
+                'file' => 'user/config/themes/agency.yaml',
+                'modified' => 1466594892
+            ],
+            'themes/antimatter' => [
+                'file' => 'user/config/themes/antimatter.yaml',
+                'modified' => 1466596448
+            ],
+            'themes/big-picture' => [
+                'file' => 'user/config/themes/big-picture.yaml',
+                'modified' => 1466594721
+            ],
+            'themes/grayscale' => [
+                'file' => 'user/config/themes/grayscale.yaml',
+                'modified' => 1466594617
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ]
         ],
         'user/plugins' => [
+            'plugins/admin' => [
+                'file' => 'user/plugins/admin/admin.yaml',
+                'modified' => 1466594138
+            ],
+            'plugins/email' => [
+                'file' => 'user/plugins/email/email.yaml',
+                'modified' => 1466594128
+            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1461784045
+                'modified' => 1466673439
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/form.yaml',
+                'modified' => 1466594123
+            ],
+            'plugins/login' => [
+                'file' => 'user/plugins/login/login.yaml',
+                'modified' => 1466594133
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1461784046
+                'modified' => 1466673439
             ]
         ]
     ],
     'data' => [
         'plugins' => [
+            'admin' => [
+                'enabled' => true,
+                'route' => '/admin',
+                'theme' => 'grav',
+                'dashboard' => [
+                    'days_of_stats' => 7
+                ],
+                'session' => [
+                    'timeout' => 1800
+                ],
+                'warnings' => [
+                    'delete_page' => true
+                ],
+                'edit_mode' => 'normal',
+                'show_github_msg' => true,
+                'google_fonts' => true,
+                'enable_auto_updates_check' => true,
+                'popularity' => [
+                    'enabled' => true,
+                    'ignore' => [
+                        0 => '/test*',
+                        1 => '/modular'
+                    ],
+                    'history' => [
+                        'daily' => 30,
+                        'monthly' => 12,
+                        'visitors' => 20
+                    ]
+                ]
+            ],
+            'email' => [
+                'enabled' => true,
+                'from' => NULL,
+                'from_name' => NULL,
+                'to' => NULL,
+                'to_name' => NULL,
+                'mailer' => [
+                    'engine' => 'mail',
+                    'smtp' => [
+                        'server' => 'localhost',
+                        'port' => 25,
+                        'encryption' => 'none',
+                        'user' => '',
+                        'password' => ''
+                    ],
+                    'sendmail' => [
+                        'bin' => '/usr/sbin/sendmail'
+                    ]
+                ],
+                'content_type' => 'text/html',
+                'debug' => false
+            ],
             'error' => [
                 'enabled' => true,
                 'routes' => [
                     404 => '/error'
+                ]
+            ],
+            'form' => [
+                'enabled' => true,
+                'files' => [
+                    'multiple' => false,
+                    'destination' => '@self',
+                    'accept' => [
+                        0 => 'image/*'
+                    ]
+                ]
+            ],
+            'login' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'route' => false,
+                'route_register' => false,
+                'route_activate' => '/activate_user',
+                'route_forgot' => '/forgot_password',
+                'route_reset' => '/reset_password',
+                'redirect' => NULL,
+                'parent_acl' => false,
+                'user_registration' => [
+                    'enabled' => true,
+                    'fields' => [
+                        0 => 'username',
+                        1 => 'password',
+                        2 => 'email',
+                        3 => 'fullname',
+                        4 => 'title',
+                        5 => 'access',
+                        6 => 'state'
+                    ],
+                    'additional_params' => [
+                        'access' => 'site.login'
+                    ],
+                    'options' => [
+                        'validate_password1_and_password2' => true,
+                        'set_user_disabled' => false,
+                        'login_after_registration' => true,
+                        'send_activation_email' => false,
+                        'send_notification_email' => false,
+                        'send_welcome_email' => false
+                    ]
+                ],
+                'rememberme' => [
+                    'enabled' => true,
+                    'timeout' => 1800,
+                    'name' => 'grav-rememberme'
+                ],
+                'oauth' => [
+                    'enabled' => false,
+                    'user' => [
+                        'autocreate' => false,
+                        'access' => [
+                            'site' => [
+                                'login' => true
+                            ]
+                        ]
+                    ],
+                    'providers' => [
+                        'Facebook' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'Google' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'GitHub' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'Twitter' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ]
+                    ]
                 ]
             ],
             'problems' => [
@@ -370,7 +560,7 @@ return [
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'balltoro',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -495,6 +685,65 @@ return [
                 'name' => 'grav-site',
                 'secure' => false,
                 'httponly' => true
+            ]
+        ],
+        'security' => [
+            'salt' => 'eHoa9ZEPY41Utp'
+        ],
+        'themes' => [
+            'agency' => [
+                'enabled' => true,
+                'color' => 'blue',
+                'dropdown' => [
+                    'enabled' => true
+                ],
+                'streams' => [
+                    'scheme' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/agency'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'antimatter' => [
+                'enabled' => true,
+                'default_lang' => 'en',
+                'dropdown' => [
+                    'enabled' => true
+                ],
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/antimatter'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'big-picture' => [
+                'enabled' => true
+            ],
+            'grayscale' => [
+                'enabled' => true,
+                'color' => 'blue',
+                'dropdown' => [
+                    'enabled' => true
+                ],
+                'streams' => [
+                    'scheme' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/grayscale'
+                            ]
+                        ]
+                    ]
+                ]
             ]
         ]
     ]

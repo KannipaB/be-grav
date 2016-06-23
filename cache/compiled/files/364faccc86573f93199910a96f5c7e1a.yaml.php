@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/developer/PhpstormProjects/be-grav/system/blueprints/config/system.yaml',
-    'modified' => 1461784044,
+    'modified' => 1466673439,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [

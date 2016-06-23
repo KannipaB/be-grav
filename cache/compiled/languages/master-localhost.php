@@ -1,89 +1,89 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1466596556,
-    'checksum' => '80f980e9ec3263a9c7755596da82fc44',
+    'timestamp' => 1466673579,
+    'checksum' => '60f549d4ab3813f119f16e98461b2d01',
     'files' => [
         'system/languages' => [
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1461784044
+                'modified' => 1466673439
             ]
         ],
         'user/plugins' => [
@@ -8613,6 +8613,6 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '80f980e9ec3263a9c7755596da82fc44'
+        'checksum' => '60f549d4ab3813f119f16e98461b2d01'
     ]
 ];
