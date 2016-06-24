@@ -28,7 +28,17 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "    <div class=\"collapse\" id=\"exCollapsingNavbar\">
+        echo "    <nav class=\"navbar-top bg-inverse\">
+        <div class=\"nav-bar\">
+            <a href=\"#\">
+                <img class=\"nav-bar__logo \" src=\"https://balltoro.com/ui/web/images/main-logo.png\">
+            </a>
+            <button class=\"navbar-toggler pull-xs-right nav-bar__toggler collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar\" aria-expanded=\"false\">
+                <i class=\"fa fa-bars\"></i>
+            </button>
+        </div>
+    </nav>
+    <div class=\"collapse\" id=\"exCollapsingNavbar\">
         <div class=\"bg-inverse nav-bar\">
             <ul class=\"nav-bar__dropdown--position\">
                 <li><a href=\"#\" class=\"nav-list__menu\">ผลบอลวันนี้</a></li>
@@ -61,8 +71,7 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </li>
                 <li>
                     <a href=\"#\" class=\"nav-list__menu\" data-toggle=\"collapse\" data-target=\"#drilldown-2\">
-                        สกู๊ปฟุตบอล
-                        <i class=\"fa fa-chevron-down\"></i>
+                        สกู๊ปฟุตบอล<i class=\"fa fa-chevron-down\"></i>
                     </a>
                     <ul id=\"drilldown-2\" class=\"nav nav-pills nav-stacked collapse\">
                         <li>
@@ -101,6 +110,7 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 <a href=\"#\" class=\"col-xs-3 social__button social__button--google-plus fa fa-2x fa-google-plus\"></a>
                 <a href=\"#\" class=\"col-xs-3 social__button social__button--line fa-2x icon-line\"></a>
             </div>
+
             <div class=\"row carousel slide\" id=\"featured\" data-ride=\"carousel\" data-interval=\"3000\">
                 <div class=\"carousel-inner\" role=\"listbox\">
                     <div class=\"carousel-item active\">
@@ -122,11 +132,11 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </div>
                 <div class=\"featured-content__separator\"></div>
             </div>
+
             <div class=\"row scoop m-t-2\">
                 <div class=\"category__header\">
                     <div class=\"pull-xs-left\">
                         <h5>Special Scoops</h5>
-
                         <p>สกู๊ปพิเศษ</p>
                     </div>
                     <div class=\"pull-xs-right\">
@@ -410,6 +420,16 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /* {% extends 'partials/base.html.twig' %}*/
 /* */
 /* {% block content %}*/
+/*     <nav class="navbar-top bg-inverse">*/
+/*         <div class="nav-bar">*/
+/*             <a href="#">*/
+/*                 <img class="nav-bar__logo " src="https://balltoro.com/ui/web/images/main-logo.png">*/
+/*             </a>*/
+/*             <button class="navbar-toggler pull-xs-right nav-bar__toggler collapsed" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-expanded="false">*/
+/*                 <i class="fa fa-bars"></i>*/
+/*             </button>*/
+/*         </div>*/
+/*     </nav>*/
 /*     <div class="collapse" id="exCollapsingNavbar">*/
 /*         <div class="bg-inverse nav-bar">*/
 /*             <ul class="nav-bar__dropdown--position">*/
@@ -443,8 +463,7 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </li>*/
 /*                 <li>*/
 /*                     <a href="#" class="nav-list__menu" data-toggle="collapse" data-target="#drilldown-2">*/
-/*                         สกู๊ปฟุตบอล*/
-/*                         <i class="fa fa-chevron-down"></i>*/
+/*                         สกู๊ปฟุตบอล<i class="fa fa-chevron-down"></i>*/
 /*                     </a>*/
 /*                     <ul id="drilldown-2" class="nav nav-pills nav-stacked collapse">*/
 /*                         <li>*/
@@ -483,6 +502,7 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 <a href="#" class="col-xs-3 social__button social__button--google-plus fa fa-2x fa-google-plus"></a>*/
 /*                 <a href="#" class="col-xs-3 social__button social__button--line fa-2x icon-line"></a>*/
 /*             </div>*/
+/* */
 /*             <div class="row carousel slide" id="featured" data-ride="carousel" data-interval="3000">*/
 /*                 <div class="carousel-inner" role="listbox">*/
 /*                     <div class="carousel-item active">*/
@@ -504,11 +524,11 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </div>*/
 /*                 <div class="featured-content__separator"></div>*/
 /*             </div>*/
+/* */
 /*             <div class="row scoop m-t-2">*/
 /*                 <div class="category__header">*/
 /*                     <div class="pull-xs-left">*/
 /*                         <h5>Special Scoops</h5>*/
-/* */
 /*                         <p>สกู๊ปพิเศษ</p>*/
 /*                     </div>*/
 /*                     <div class="pull-xs-right">*/

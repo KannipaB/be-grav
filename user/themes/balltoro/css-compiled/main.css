@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url(../css/bootstrap.min.css);
-@import url(../css/font-awesome.min.css);
-@import url(line-icon/style.css);
 .footer {
   background: #333333;
   color: #FFFFFF;
