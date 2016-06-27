@@ -36,25 +36,25 @@ class __TwigTemplate_d19d10730666f4e209727e4a001cc3260ca3919de3c2e66fa94f5c14bc5
     ";
         // line 6
         $this->displayBlock('head', $context, $blocks);
-        // line 29
+        // line 30
         echo "</head>
 <body>
 
     ";
-        // line 32
+        // line 33
         $this->displayBlock('showcase', $context, $blocks);
         $this->displayBlock('body', $context, $blocks);
-        // line 37
-        echo "
-    ";
         // line 38
-        $this->displayBlock('footer', $context, $blocks);
-        // line 39
         echo "
     ";
+        // line 39
+        $this->displayBlock('footer', $context, $blocks);
         // line 40
+        echo "
+    ";
+        // line 41
         $this->displayBlock('bottom', $context, $blocks);
-        // line 46
+        // line 47
         echo "</body>
 </html>
 ";
@@ -90,15 +90,15 @@ class __TwigTemplate_d19d10730666f4e209727e4a001cc3260ca3919de3c2e66fa94f5c14bc5
         ";
         // line 14
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 19
+        // line 20
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 
         ";
-        // line 21
+        // line 22
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 26
+        // line 27
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -111,66 +111,69 @@ class __TwigTemplate_d19d10730666f4e209727e4a001cc3260ca3919de3c2e66fa94f5c14bc5
     {
         // line 15
         echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/font-awesome.min.css", 1 => 100), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/font-awesome.min.css", 1 => 101), "method");
         // line 16
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/bootstrap.css", 1 => 100), "method");
         // line 17
         echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css-compiled/main.css"), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/line-icon/style.css"), "method");
         // line 18
+        echo "            ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css-compiled/main.css"), "method");
+        // line 19
         echo "        ";
     }
 
-    // line 21
+    // line 22
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 22
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
         // line 23
         echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/bootstrap.min.js", 1 => 100), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
         // line 24
         echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/main.js"), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/bootstrap.min.js", 1 => 100), "method");
         // line 25
+        echo "            ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/main.js"), "method");
+        // line 26
         echo "        ";
     }
 
-    // line 32
+    // line 33
     public function block_showcase($context, array $blocks = array())
     {
     }
 
     public function block_body($context, array $blocks = array())
     {
-        // line 33
+        // line 34
         echo "        <section id=\"body\" class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
             ";
-        // line 34
-        $this->displayBlock('content', $context, $blocks);
         // line 35
+        $this->displayBlock('content', $context, $blocks);
+        // line 36
         echo "        </section>
     ";
     }
 
-    // line 34
+    // line 35
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 38
+    // line 39
     public function block_footer($context, array $blocks = array())
     {
     }
 
-    // line 40
+    // line 41
     public function block_bottom($context, array $blocks = array())
     {
-        // line 41
+        // line 42
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -192,7 +195,7 @@ class __TwigTemplate_d19d10730666f4e209727e4a001cc3260ca3919de3c2e66fa94f5c14bc5
 
     public function getDebugInfo()
     {
-        return array (  174 => 41,  171 => 40,  166 => 38,  161 => 34,  156 => 35,  154 => 34,  149 => 33,  142 => 32,  138 => 25,  135 => 24,  132 => 23,  129 => 22,  126 => 21,  122 => 18,  119 => 17,  116 => 16,  113 => 15,  110 => 14,  102 => 26,  100 => 21,  94 => 19,  92 => 14,  87 => 12,  83 => 11,  80 => 10,  78 => 9,  70 => 8,  67 => 7,  64 => 6,  58 => 46,  56 => 40,  53 => 39,  51 => 38,  48 => 37,  45 => 32,  40 => 29,  38 => 6,  32 => 3,  29 => 2,  27 => 1,);
+        return array (  177 => 42,  174 => 41,  169 => 39,  164 => 35,  159 => 36,  157 => 35,  152 => 34,  145 => 33,  141 => 26,  138 => 25,  135 => 24,  132 => 23,  129 => 22,  125 => 19,  122 => 18,  119 => 17,  116 => 16,  113 => 15,  110 => 14,  102 => 27,  100 => 22,  94 => 20,  92 => 14,  87 => 12,  83 => 11,  80 => 10,  78 => 9,  70 => 8,  67 => 7,  64 => 6,  58 => 47,  56 => 41,  53 => 40,  51 => 39,  48 => 38,  45 => 33,  40 => 30,  38 => 6,  32 => 3,  29 => 2,  27 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -209,8 +212,9 @@ class __TwigTemplate_d19d10730666f4e209727e4a001cc3260ca3919de3c2e66fa94f5c14bc5
 /*         <link rel="canonical" href="{{ page.url(true, true) }}"/>*/
 /* */
 /*         {% block stylesheets %}*/
-/*             {% do assets.addCss('theme://css/font-awesome.min.css',100) %}*/
+/*             {% do assets.addCss('theme://css/font-awesome.min.css',101) %}*/
 /*             {% do assets.addCss('theme://css/bootstrap.css',100) %}*/
+/*             {% do assets.addCss('theme://css/line-icon/style.css') %}*/
 /*             {% do assets.addCss('theme://css-compiled/main.css') %}*/
 /*         {% endblock %}*/
 /*         {{ assets.css() }}*/

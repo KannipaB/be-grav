@@ -28,21 +28,31 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "    <nav class=\"navbar-top bg-inverse\">
+        echo "    <h1 style=\"color:";
+        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "themes", array()), "balltoro", array()), "color", array());
+        echo "\">";
+        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "themes", array()), "balltoro", array()), "info", array());
+        echo "</h1>
+    <nav class=\"navbar-top bg-inverse\">
         <div class=\"nav-bar\">
             <a href=\"#\">
                 <img class=\"nav-bar__logo \" src=\"https://balltoro.com/ui/web/images/main-logo.png\">
             </a>
-            <button class=\"navbar-toggler pull-xs-right nav-bar__toggler collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar\" aria-expanded=\"false\">
+            <button class=\"navbar-toggler pull-xs-right nav-bar__toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar\">
                 <i class=\"fa fa-bars\"></i>
             </button>
         </div>
     </nav>
+
     <div class=\"collapse\" id=\"exCollapsingNavbar\">
         <div class=\"bg-inverse nav-bar\">
             <ul class=\"nav-bar__dropdown--position\">
-                <li><a href=\"#\" class=\"nav-list__menu\">ผลบอลวันนี้</a></li>
-                <li><a href=\"#\" class=\"nav-list__menu\">ตารางการแข่งขัน</a></li>
+                <li>
+                    <a href=\"#\" class=\"nav-list__menu\">ผลบอลวันนี้</a>
+                </li>
+                <li>
+                    <a href=\"#\" class=\"nav-list__menu\">ตารางการแข่งขัน</a>
+                </li>
                 <li>
                     <a href=\"#\" class=\"nav-list__menu\" data-toggle=\"collapse\" data-target=\"#drilldown-1\">
                         ข่าวฟุตบอล
@@ -71,7 +81,8 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </li>
                 <li>
                     <a href=\"#\" class=\"nav-list__menu\" data-toggle=\"collapse\" data-target=\"#drilldown-2\">
-                        สกู๊ปฟุตบอล<i class=\"fa fa-chevron-down\"></i>
+                        สกู๊ปฟุตบอล
+                        <i class=\"fa fa-chevron-down\"></i>
                     </a>
                     <ul id=\"drilldown-2\" class=\"nav nav-pills nav-stacked collapse\">
                         <li>
@@ -98,7 +109,6 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                     <a href=\"#\" class=\"nav-list__menu\" type=\"button\"><i class=\"fa fa-sign-in fa-2x\"></i> เข้าสู่ระบบ</a>
                 </li>
             </ul>
-
         </div>
     </div>
     <div class=\"container\">
@@ -110,29 +120,43 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 <a href=\"#\" class=\"col-xs-3 social__button social__button--google-plus fa fa-2x fa-google-plus\"></a>
                 <a href=\"#\" class=\"col-xs-3 social__button social__button--line fa-2x icon-line\"></a>
             </div>
-
             <div class=\"row carousel slide\" id=\"featured\" data-ride=\"carousel\" data-interval=\"3000\">
                 <div class=\"carousel-inner\" role=\"listbox\">
                     <div class=\"carousel-item active\">
                         <div class=\"featured-content\">
-                            <div class=\"featured-content__image\"><img src=\"images\\featured-demo-img.png\" alt=\"DEMO 1\">
+                            <div class=\"featured-content__image\">
+                                <img src=\"";
+        // line 97
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO 1\">
                             </div>
-                            <div class=\"featured-content__date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"featured-content__headline\"><a href=\"#\">HEADLINE</a></div>
+                            <div class=\"featured-content__date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"featured-content__headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
                         </div>
                     </div>
                     <div class=\"carousel-item\">
                         <div class=\"featured-content\">
-                            <div class=\"featured-content__image\"><img src=\"images\\featured-demo-img-2.png\" alt=\"DEMO 1\">
+                            <div class=\"featured-content__image\">
+                                <img src=\"";
+        // line 110
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO 1\">
                             </div>
-                            <div class=\"featured-content__date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"featured-content__headline\"><a href=\"#\">HEADLINE</a></div>
+                            <div class=\"featured-content__date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"featured-content__headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class=\"featured-content__separator\"></div>
             </div>
-
             <div class=\"row scoop m-t-2\">
                 <div class=\"category__header\">
                     <div class=\"pull-xs-left\">
@@ -144,48 +168,98 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                     </div>
                 </div>
                 <div class=\"scoop__content\">
-                    <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\"></div>
-                    <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                    <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
+                    <div class=\"scoop__content--image\">
+                        <img src=\"";
+        // line 135
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
+                    </div>
+                    <div class=\"scoop__content--date\">
+                        14 มิ.ย. 2559 20:00
+                    </div>
+                    <div class=\"scoop__content--headline\">
+                        <a href=\"#\">HEADLINE</a>
+                    </div>
                 </div>
                 <div class=\"scoop__content\">
-                    <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\"></div>
-                    <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                    <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
-                </div>
-                <div>
-                    <div class=\"col-xs-6 p-l-0\">
-                        <div class=\"scoop__content\">
-                            <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\">
-                            </div>
-                            <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
-                        </div>
+                    <div class=\"scoop__content--image\">
+                        <img src=\"";
+        // line 146
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
                     </div>
-                    <div class=\"col-xs-6 p-r-0\">
-                        <div class=\"scoop__content\">
-                            <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\">
-                            </div>
-                            <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
-                        </div>
+                    <div class=\"scoop__content--date\">
+                        14 มิ.ย. 2559 20:00
+                    </div>
+                    <div class=\"scoop__content--headline\">
+                        <a href=\"#\">HEADLINE</a>
                     </div>
                 </div>
                 <div>
                     <div class=\"col-xs-6 p-l-0\">
                         <div class=\"scoop__content\">
-                            <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\">
+                            <div class=\"scoop__content--image\">
+                                <img src=\"";
+        // line 159
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
                             </div>
-                            <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
+                            <div class=\"scoop__content--date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"scoop__content--headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
                         </div>
                     </div>
                     <div class=\"col-xs-6 p-r-0\">
                         <div class=\"scoop__content\">
-                            <div class=\"scoop__content--image\"><img src=\"images\\scoop-demo-img.jpg\" alt=\"DEMO SCOOP\">
+                            <div class=\"scoop__content--image\">
+                                <img src=\"";
+        // line 172
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
                             </div>
-                            <div class=\"scoop__content--date\">14 มิ.ย. 2559 20:00</div>
-                            <div class=\"scoop__content--headline\"><a href=\"#\">HEADLINE</a></div>
+                            <div class=\"scoop__content--date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"scoop__content--headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class=\"col-xs-6 p-l-0\">
+                        <div class=\"scoop__content\">
+                            <div class=\"scoop__content--image\">
+                                <img src=\"";
+        // line 187
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
+                            </div>
+                            <div class=\"scoop__content--date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"scoop__content--headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-xs-6 p-r-0\">
+                        <div class=\"scoop__content\">
+                            <div class=\"scoop__content--image\">
+                                <img src=\"";
+        // line 200
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"DEMO SCOOP\">
+                            </div>
+                            <div class=\"scoop__content--date\">
+                                14 มิ.ย. 2559 20:00
+                            </div>
+                            <div class=\"scoop__content--headline\">
+                                <a href=\"#\">HEADLINE</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +271,6 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 <div class=\"category__header\">
                     <div class=\"pull-xs-left\">
                         <h5>News</h5>
-
                         <p>ข่าวและความเคลื่อนไหวล่าสุด</p>
                     </div>
                     <div class=\"pull-xs-right\">
@@ -206,7 +279,12 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </div>
                 <div class=\"news__content\">
                     <div class=\"col-xs-3 p-x-0\">
-                        <div class=\"news__content--image\"><img src=\"images\\latest-demo-img.jpg\" alt=\"\"></div>
+                        <div class=\"news__content--image\">
+                            <img src=\"";
+        // line 228
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"\">
+                        </div>
                     </div>
                     <div class=\"col-xs-9\">
                         <div class=\"news__content--date\">14 มิ.ย. 2559 20:00</div>
@@ -215,7 +293,12 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </div>
                 <div class=\"news__content\">
                     <div class=\"col-xs-3 p-x-0\">
-                        <div class=\"news__content--image\"><img src=\"images\\latest-demo-img.jpg\" alt=\"\"></div>
+                        <div class=\"news__content--image\">
+                            <img src=\"";
+        // line 239
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/featured-demo-img-2.png");
+        echo "\" alt=\"\">
+                        </div>
                     </div>
                     <div class=\"col-xs-9\">
                         <div class=\"news__content--date\">14 มิ.ย. 2559 20:00</div>
@@ -227,19 +310,18 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
                 </div>
             </div>
             <div class=\"row result-board\">
-                <div class=\"row result-board__button collapsed\" data-toggle=\"collapse\" href=\"#collapse-dropdown\"
-                     aria-expanded=\"false\" aria-controls=\"collapse-dropdown\">
-                    <a>ผลบอล</a>
+                <div class=\"row result-board__button collapsed\" data-toggle=\"collapse\" href=\"#collapse-dropdown\" aria-expanded=\"false\" aria-controls=\"collapse-dropdown\">
+                    <span>ผลบอล</span>
                 </div>
                 <div class=\"collapse\" id=\"collapse-dropdown\">
-                    <div class=\"dropdown\">
-                        <span type=\"button\" id=\"menu-toggler\" data-toggle=\"dropdown\">
+                    <div class=\"dropdown\" >
+                        <div  type=\"button\" id=\"menu-toggler\" data-toggle=\"dropdown\">
                             <i class=\"fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon\"></i>
-                            <div class=\"result-board__league-dropdown\"><a>English Premier League</a></div>
-                        </span>
-
-                        <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\"
-                             aria-labelledby=\"menu-toggler\">
+                            <div class=\"result-board__league-dropdown\">
+                                <span>English Premier League</span>
+                            </div>
+                        </div>
+                        <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\" aria-labelledby=\"menu-toggler\">
                             <p>league result</p>
                         </div>
                     </div>
@@ -250,21 +332,18 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
             </div>
 
             <div class=\"row result-board\">
-                <div class=\"row result-board__button collapsed\" data-toggle=\"collapse\" href=\"#collapse-dropdown1\"
-                     aria-expanded=\"false\" aria-controls=\"collapse-dropdown\">
-                    <a>ตารางแข่งวันนี้</a>
+                <div class=\"row result-board__button collapsed\" data-toggle=\"collapse\" href=\"#collapse-dropdown1\" aria-expanded=\"false\" aria-controls=\"collapse-dropdown\">
+                    <span>ตารางแข่งวันนี้</span>
                 </div>
                 <div class=\"collapse\" id=\"collapse-dropdown1\">
                     <div class=\"dropdown\">
-                        <span type=\"button\" id=\"menu-toggler1\" data-toggle=\"dropdown\">
+                        <div  type=\"button\" id=\"menu-toggler1\" data-toggle=\"dropdown\">
                             <i class=\"fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon\"></i>
                             <div class=\"result-board__league-dropdown \">
-                                <a>English Premier League</a>
+                                <span>English Premier League</span>
                             </div>
-                        </span>
-
-                        <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\"
-                             aria-labelledby=\"menu-toggler1\">
+                        </div>
+                        <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\" aria-labelledby=\"menu-toggler1\">
                             <p>league result</p>
                         </div>
                     </div>
@@ -275,29 +354,29 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
             </div>
             <div class=\"row result-board\">
                 <div class=\"table-description\">
-                    <a>ตารางคะแนน</a><a class=\"date-time\">อัพเดท 20 มิ.ย. 2559 15:10</a>
+                    <span>ตารางคะแนน</span><span>อัพเดท 20 มิ.ย. 2559 15:10</span>
                 </div>
-                <div class=\"dropdown\">
-                    <span type=\"button\" id=\"menu-toggler2\" data-toggle=\"dropdown\">
-                        <i class=\"fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon\"></i>
-                        <div class=\"result-board__league-dropdown\">
-                            <a class=\"\">Premier League</a>
-                        </div>
-                    </span>
-
-                    <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\"
-                         aria-labelledby=\"menu-toggler2\">
+                <div class=\"dropdown\" >
+                        <span  type=\"button\" id=\"menu-toggler2\" data-toggle=\"dropdown\">
+                            <i class=\"fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon\"></i>
+                            <span class=\"result-board__league-dropdown\">
+                                <span class=\"\">Premier League</span>
+                            </span>
+                        </span>
+                    <div class=\"dropdown-menu result-board__league-dropdown--list\" role=\"menu\" aria-labelledby=\"menu-toggler2\" >
                         <p>league result</p>
                     </div>
                 </div>
                 <div class=\"result-board__league-result league-table\">
-                    <table class=\"table table-sm league-table--box\">
+                    <table class =\"table-sm league-table--box\">
                         <thead class=\"league-table__header\">
-                        <th>Pos</th>
-                        <th>Teams</th>
-                        <th>P</th>
-                        <th>+/-</th>
-                        <th>Pts</th>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Teams</th>
+                            <th>P</th>
+                            <th>+/-</th>
+                            <th>Pts</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr class=\"rank-1 league-table\">
@@ -399,6 +478,25 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
             <div class=\"row ad-box text-xs-center\">ADVERTISE HERE</div>
         </div>
     </div>
+    <!---------- FOOTER BELOW ---------->
+    <footer class=\"footer\">
+        <ul>
+            <li><a href=\"#\" class=\"footer__link\">หน้าแรก</a></li>
+            <li><a href=\"#\" class=\"footer__link\">ผลบอลวันนี้</a></li>
+            <li><a href=\"#\" class=\"footer__link\">ตารางการแข่งขัน</a></li>
+            <li><a href=\"#\" class=\"footer__link\">ข่าวฟุตบอล</a></li>
+            <li><a href=\"#\" class=\"footer__link\">สกู๊ปทั้งหมด</a></li>
+            <li><a href=\"#\" class=\"footer__link\">กฎและข้อตกลง</a></li>
+            <li><a href=\"#\" class=\"footer__link\">เกี่ยวกับเรา</a></li>
+        </ul>
+        <div class=\"footer-social text-xs-center\">
+            <a href=\"#\" class=\"footer-social__icon footer-social__icon--facebook\"><i class=\"fa fa-facebook\"></i></a>
+            <a href=\"#\" class=\"footer-social__icon footer-social__icon--twitter\"><i class=\"fa fa-twitter\"></i></a>
+            <a href=\"#\" class=\"footer-social__icon footer-social__icon--pinterest\"><i class=\"fa fa-pinterest-p\"></i></a>
+            <a href=\"#\" class=\"footer-social__icon footer-social__icon--google-plus\"><i class=\"fa fa-google-plus\"></i></a>
+            <p>Copyright © 2015</p>
+        </div>
+    </footer>
 ";
     }
 
@@ -414,27 +512,33 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,  11 => 1,);
+        return array (  299 => 239,  285 => 228,  254 => 200,  238 => 187,  220 => 172,  204 => 159,  188 => 146,  174 => 135,  146 => 110,  130 => 97,  31 => 4,  28 => 3,  11 => 1,);
     }
 }
 /* {% extends 'partials/base.html.twig' %}*/
 /* */
 /* {% block content %}*/
+/*     <h1 style="color:{{ config.themes.balltoro.color }}">{{ config.themes.balltoro.info }}</h1>*/
 /*     <nav class="navbar-top bg-inverse">*/
 /*         <div class="nav-bar">*/
 /*             <a href="#">*/
 /*                 <img class="nav-bar__logo " src="https://balltoro.com/ui/web/images/main-logo.png">*/
 /*             </a>*/
-/*             <button class="navbar-toggler pull-xs-right nav-bar__toggler collapsed" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-expanded="false">*/
+/*             <button class="navbar-toggler pull-xs-right nav-bar__toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">*/
 /*                 <i class="fa fa-bars"></i>*/
 /*             </button>*/
 /*         </div>*/
 /*     </nav>*/
+/* */
 /*     <div class="collapse" id="exCollapsingNavbar">*/
 /*         <div class="bg-inverse nav-bar">*/
 /*             <ul class="nav-bar__dropdown--position">*/
-/*                 <li><a href="#" class="nav-list__menu">ผลบอลวันนี้</a></li>*/
-/*                 <li><a href="#" class="nav-list__menu">ตารางการแข่งขัน</a></li>*/
+/*                 <li>*/
+/*                     <a href="#" class="nav-list__menu">ผลบอลวันนี้</a>*/
+/*                 </li>*/
+/*                 <li>*/
+/*                     <a href="#" class="nav-list__menu">ตารางการแข่งขัน</a>*/
+/*                 </li>*/
 /*                 <li>*/
 /*                     <a href="#" class="nav-list__menu" data-toggle="collapse" data-target="#drilldown-1">*/
 /*                         ข่าวฟุตบอล*/
@@ -463,7 +567,8 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </li>*/
 /*                 <li>*/
 /*                     <a href="#" class="nav-list__menu" data-toggle="collapse" data-target="#drilldown-2">*/
-/*                         สกู๊ปฟุตบอล<i class="fa fa-chevron-down"></i>*/
+/*                         สกู๊ปฟุตบอล*/
+/*                         <i class="fa fa-chevron-down"></i>*/
 /*                     </a>*/
 /*                     <ul id="drilldown-2" class="nav nav-pills nav-stacked collapse">*/
 /*                         <li>*/
@@ -490,7 +595,6 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                     <a href="#" class="nav-list__menu" type="button"><i class="fa fa-sign-in fa-2x"></i> เข้าสู่ระบบ</a>*/
 /*                 </li>*/
 /*             </ul>*/
-/* */
 /*         </div>*/
 /*     </div>*/
 /*     <div class="container">*/
@@ -502,29 +606,37 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 <a href="#" class="col-xs-3 social__button social__button--google-plus fa fa-2x fa-google-plus"></a>*/
 /*                 <a href="#" class="col-xs-3 social__button social__button--line fa-2x icon-line"></a>*/
 /*             </div>*/
-/* */
 /*             <div class="row carousel slide" id="featured" data-ride="carousel" data-interval="3000">*/
 /*                 <div class="carousel-inner" role="listbox">*/
 /*                     <div class="carousel-item active">*/
 /*                         <div class="featured-content">*/
-/*                             <div class="featured-content__image"><img src="images\featured-demo-img.png" alt="DEMO 1">*/
+/*                             <div class="featured-content__image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO 1">*/
 /*                             </div>*/
-/*                             <div class="featured-content__date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="featured-content__headline"><a href="#">HEADLINE</a></div>*/
+/*                             <div class="featured-content__date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="featured-content__headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="carousel-item">*/
 /*                         <div class="featured-content">*/
-/*                             <div class="featured-content__image"><img src="images\featured-demo-img-2.png" alt="DEMO 1">*/
+/*                             <div class="featured-content__image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO 1">*/
 /*                             </div>*/
-/*                             <div class="featured-content__date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="featured-content__headline"><a href="#">HEADLINE</a></div>*/
+/*                             <div class="featured-content__date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="featured-content__headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="featured-content__separator"></div>*/
 /*             </div>*/
-/* */
 /*             <div class="row scoop m-t-2">*/
 /*                 <div class="category__header">*/
 /*                     <div class="pull-xs-left">*/
@@ -536,48 +648,80 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="scoop__content">*/
-/*                     <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP"></div>*/
-/*                     <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                     <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
+/*                     <div class="scoop__content--image">*/
+/*                         <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
+/*                     </div>*/
+/*                     <div class="scoop__content--date">*/
+/*                         14 มิ.ย. 2559 20:00*/
+/*                     </div>*/
+/*                     <div class="scoop__content--headline">*/
+/*                         <a href="#">HEADLINE</a>*/
+/*                     </div>*/
 /*                 </div>*/
 /*                 <div class="scoop__content">*/
-/*                     <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP"></div>*/
-/*                     <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                     <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
-/*                 </div>*/
-/*                 <div>*/
-/*                     <div class="col-xs-6 p-l-0">*/
-/*                         <div class="scoop__content">*/
-/*                             <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP">*/
-/*                             </div>*/
-/*                             <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
-/*                         </div>*/
+/*                     <div class="scoop__content--image">*/
+/*                         <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
 /*                     </div>*/
-/*                     <div class="col-xs-6 p-r-0">*/
-/*                         <div class="scoop__content">*/
-/*                             <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP">*/
-/*                             </div>*/
-/*                             <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
-/*                         </div>*/
+/*                     <div class="scoop__content--date">*/
+/*                         14 มิ.ย. 2559 20:00*/
+/*                     </div>*/
+/*                     <div class="scoop__content--headline">*/
+/*                         <a href="#">HEADLINE</a>*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div>*/
 /*                     <div class="col-xs-6 p-l-0">*/
 /*                         <div class="scoop__content">*/
-/*                             <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP">*/
+/*                             <div class="scoop__content--image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
 /*                             </div>*/
-/*                             <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
+/*                             <div class="scoop__content--date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="scoop__content--headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="col-xs-6 p-r-0">*/
 /*                         <div class="scoop__content">*/
-/*                             <div class="scoop__content--image"><img src="images\scoop-demo-img.jpg" alt="DEMO SCOOP">*/
+/*                             <div class="scoop__content--image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
 /*                             </div>*/
-/*                             <div class="scoop__content--date">14 มิ.ย. 2559 20:00</div>*/
-/*                             <div class="scoop__content--headline"><a href="#">HEADLINE</a></div>*/
+/*                             <div class="scoop__content--date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="scoop__content--headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div>*/
+/*                     <div class="col-xs-6 p-l-0">*/
+/*                         <div class="scoop__content">*/
+/*                             <div class="scoop__content--image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
+/*                             </div>*/
+/*                             <div class="scoop__content--date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="scoop__content--headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <div class="col-xs-6 p-r-0">*/
+/*                         <div class="scoop__content">*/
+/*                             <div class="scoop__content--image">*/
+/*                                 <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="DEMO SCOOP">*/
+/*                             </div>*/
+/*                             <div class="scoop__content--date">*/
+/*                                 14 มิ.ย. 2559 20:00*/
+/*                             </div>*/
+/*                             <div class="scoop__content--headline">*/
+/*                                 <a href="#">HEADLINE</a>*/
+/*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -589,7 +733,6 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 <div class="category__header">*/
 /*                     <div class="pull-xs-left">*/
 /*                         <h5>News</h5>*/
-/* */
 /*                         <p>ข่าวและความเคลื่อนไหวล่าสุด</p>*/
 /*                     </div>*/
 /*                     <div class="pull-xs-right">*/
@@ -598,7 +741,9 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </div>*/
 /*                 <div class="news__content">*/
 /*                     <div class="col-xs-3 p-x-0">*/
-/*                         <div class="news__content--image"><img src="images\latest-demo-img.jpg" alt=""></div>*/
+/*                         <div class="news__content--image">*/
+/*                             <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="">*/
+/*                         </div>*/
 /*                     </div>*/
 /*                     <div class="col-xs-9">*/
 /*                         <div class="news__content--date">14 มิ.ย. 2559 20:00</div>*/
@@ -607,7 +752,9 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </div>*/
 /*                 <div class="news__content">*/
 /*                     <div class="col-xs-3 p-x-0">*/
-/*                         <div class="news__content--image"><img src="images\latest-demo-img.jpg" alt=""></div>*/
+/*                         <div class="news__content--image">*/
+/*                             <img src="{{ url('theme://images/featured-demo-img-2.png') }}" alt="">*/
+/*                         </div>*/
 /*                     </div>*/
 /*                     <div class="col-xs-9">*/
 /*                         <div class="news__content--date">14 มิ.ย. 2559 20:00</div>*/
@@ -619,19 +766,18 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*                 </div>*/
 /*             </div>*/
 /*             <div class="row result-board">*/
-/*                 <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown"*/
-/*                      aria-expanded="false" aria-controls="collapse-dropdown">*/
-/*                     <a>ผลบอล</a>*/
+/*                 <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown" aria-expanded="false" aria-controls="collapse-dropdown">*/
+/*                     <span>ผลบอล</span>*/
 /*                 </div>*/
 /*                 <div class="collapse" id="collapse-dropdown">*/
-/*                     <div class="dropdown">*/
-/*                         <span type="button" id="menu-toggler" data-toggle="dropdown">*/
+/*                     <div class="dropdown" >*/
+/*                         <div  type="button" id="menu-toggler" data-toggle="dropdown">*/
 /*                             <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>*/
-/*                             <div class="result-board__league-dropdown"><a>English Premier League</a></div>*/
-/*                         </span>*/
-/* */
-/*                         <div class="dropdown-menu result-board__league-dropdown--list" role="menu"*/
-/*                              aria-labelledby="menu-toggler">*/
+/*                             <div class="result-board__league-dropdown">*/
+/*                                 <span>English Premier League</span>*/
+/*                             </div>*/
+/*                         </div>*/
+/*                         <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler">*/
 /*                             <p>league result</p>*/
 /*                         </div>*/
 /*                     </div>*/
@@ -642,21 +788,18 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*             </div>*/
 /* */
 /*             <div class="row result-board">*/
-/*                 <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown1"*/
-/*                      aria-expanded="false" aria-controls="collapse-dropdown">*/
-/*                     <a>ตารางแข่งวันนี้</a>*/
+/*                 <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown1" aria-expanded="false" aria-controls="collapse-dropdown">*/
+/*                     <span>ตารางแข่งวันนี้</span>*/
 /*                 </div>*/
 /*                 <div class="collapse" id="collapse-dropdown1">*/
 /*                     <div class="dropdown">*/
-/*                         <span type="button" id="menu-toggler1" data-toggle="dropdown">*/
+/*                         <div  type="button" id="menu-toggler1" data-toggle="dropdown">*/
 /*                             <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>*/
 /*                             <div class="result-board__league-dropdown ">*/
-/*                                 <a>English Premier League</a>*/
+/*                                 <span>English Premier League</span>*/
 /*                             </div>*/
-/*                         </span>*/
-/* */
-/*                         <div class="dropdown-menu result-board__league-dropdown--list" role="menu"*/
-/*                              aria-labelledby="menu-toggler1">*/
+/*                         </div>*/
+/*                         <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler1">*/
 /*                             <p>league result</p>*/
 /*                         </div>*/
 /*                     </div>*/
@@ -667,29 +810,29 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*             </div>*/
 /*             <div class="row result-board">*/
 /*                 <div class="table-description">*/
-/*                     <a>ตารางคะแนน</a><a class="date-time">อัพเดท 20 มิ.ย. 2559 15:10</a>*/
+/*                     <span>ตารางคะแนน</span><span>อัพเดท 20 มิ.ย. 2559 15:10</span>*/
 /*                 </div>*/
-/*                 <div class="dropdown">*/
-/*                     <span type="button" id="menu-toggler2" data-toggle="dropdown">*/
-/*                         <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>*/
-/*                         <div class="result-board__league-dropdown">*/
-/*                             <a class="">Premier League</a>*/
-/*                         </div>*/
-/*                     </span>*/
-/* */
-/*                     <div class="dropdown-menu result-board__league-dropdown--list" role="menu"*/
-/*                          aria-labelledby="menu-toggler2">*/
+/*                 <div class="dropdown" >*/
+/*                         <span  type="button" id="menu-toggler2" data-toggle="dropdown">*/
+/*                             <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>*/
+/*                             <span class="result-board__league-dropdown">*/
+/*                                 <span class="">Premier League</span>*/
+/*                             </span>*/
+/*                         </span>*/
+/*                     <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler2" >*/
 /*                         <p>league result</p>*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="result-board__league-result league-table">*/
-/*                     <table class="table table-sm league-table--box">*/
+/*                     <table class ="table-sm league-table--box">*/
 /*                         <thead class="league-table__header">*/
-/*                         <th>Pos</th>*/
-/*                         <th>Teams</th>*/
-/*                         <th>P</th>*/
-/*                         <th>+/-</th>*/
-/*                         <th>Pts</th>*/
+/*                         <tr>*/
+/*                             <th>Pos</th>*/
+/*                             <th>Teams</th>*/
+/*                             <th>P</th>*/
+/*                             <th>+/-</th>*/
+/*                             <th>Pts</th>*/
+/*                         </tr>*/
 /*                         </thead>*/
 /*                         <tbody>*/
 /*                         <tr class="rank-1 league-table">*/
@@ -791,5 +934,24 @@ class __TwigTemplate_2b5301f1d10af57b757cde589e7f1a5638f624ded7e0cf2b08228360e91
 /*             <div class="row ad-box text-xs-center">ADVERTISE HERE</div>*/
 /*         </div>*/
 /*     </div>*/
+/*     <!---------- FOOTER BELOW ---------->*/
+/*     <footer class="footer">*/
+/*         <ul>*/
+/*             <li><a href="#" class="footer__link">หน้าแรก</a></li>*/
+/*             <li><a href="#" class="footer__link">ผลบอลวันนี้</a></li>*/
+/*             <li><a href="#" class="footer__link">ตารางการแข่งขัน</a></li>*/
+/*             <li><a href="#" class="footer__link">ข่าวฟุตบอล</a></li>*/
+/*             <li><a href="#" class="footer__link">สกู๊ปทั้งหมด</a></li>*/
+/*             <li><a href="#" class="footer__link">กฎและข้อตกลง</a></li>*/
+/*             <li><a href="#" class="footer__link">เกี่ยวกับเรา</a></li>*/
+/*         </ul>*/
+/*         <div class="footer-social text-xs-center">*/
+/*             <a href="#" class="footer-social__icon footer-social__icon--facebook"><i class="fa fa-facebook"></i></a>*/
+/*             <a href="#" class="footer-social__icon footer-social__icon--twitter"><i class="fa fa-twitter"></i></a>*/
+/*             <a href="#" class="footer-social__icon footer-social__icon--pinterest"><i class="fa fa-pinterest-p"></i></a>*/
+/*             <a href="#" class="footer-social__icon footer-social__icon--google-plus"><i class="fa fa-google-plus"></i></a>*/
+/*             <p>Copyright © 2015</p>*/
+/*         </div>*/
+/*     </footer>*/
 /* {% endblock %}*/
 /* */

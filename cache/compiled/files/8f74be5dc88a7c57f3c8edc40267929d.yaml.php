@@ -2,9 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://balltoro/balltoro.yaml',
-    'modified' => 1466675303,
+    'modified' => 1467013153,
     'data' => [
         'enabled' => true,
+        'color' => 'yellow',
+        'info' => 'Grav is awesome!',
         'default_lang' => 'en',
         'dropdown' => [
             'enabled' => false

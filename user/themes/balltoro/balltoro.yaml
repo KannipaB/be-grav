@@ -1,4 +1,6 @@
 enabled: true
+color: yellow
+info: Grav is awesome!
 default_lang: en
 dropdown:
   enabled: false
